@@ -1,8 +1,11 @@
  
-export default function Footer({ year = '2023' }) {
+export default function Footer() {
+  const currentYear = new Date().getFullYear();
   return (
     <>
-      Copyright {year}
+      <footer className="flex h-10 w-full items-center justify-center border-t">
+        <p className="flex items-center justify-center">&#169; {currentYear}</p>
+      </footer>
     </>
-  )
+  );
 }
