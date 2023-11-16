@@ -26,30 +26,49 @@ body {
     rgb(var(--background-start-rgb));
 	display: flex;
 	flex-direction: column;
-	height: 100vh;
-	overflow-y: scroll;	
+	min-height: 100vh;	
 }
 
 .page-wrapper {
 	display: flex;
 	flex-grow: 1;
 	flex-direction: column;
-	/* height: calc(100vh - 65px); */
+	background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+	
 }
 
 .page-header {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
+	border-bottom: 1px solid darkgray;
 }
 
 .link-item {
-	/*background-color: aquamarine;*/
-	border-bottom: 1px;
-	border-bottom-color: black;
+	border-bottom: 2px solid transparent;
 
 	&-active {
-		border-bottom-color: red;
+		border-bottom-color: darkgreen;
 	}
 }
 
+.flex1 {
+	flex-grow: 1;
+}
+
+.padding8 {
+	padding: 8px;
+}
+
+.padding16 {
+	padding: 16px;
+}
+
+.paddingLeft8 {
+	padding: 8px 16px;
+}

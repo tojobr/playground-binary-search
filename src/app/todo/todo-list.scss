@@ -1,0 +1,20 @@
+@import '../variables.scss';
+
+.todo-list {
+	display: flex;
+	flex-direction: row;
+
+	&-container {
+		padding: 8px;
+	}
+
+	&-title {
+		color: $GREEN-MEDIUM;
+		font: $calibri22;
+	}
+
+	&-items {
+		display: flex;
+		flex-direction: column;
+	}
+}

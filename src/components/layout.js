@@ -6,7 +6,7 @@ export default function Layout({ children }) {
   return (
     <>
       <Navbar />
-      <main className='flex h-50 w-full items-center justify-center'>
+      <main className='flex h-50 w-full justify-center flex1'>
 				<Wrapper>{children}</Wrapper>
 			</main>
       <Footer />

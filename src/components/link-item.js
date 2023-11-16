@@ -11,7 +11,12 @@ export function LinkItem({ href, label }) {
 	const pathname = usePathname();
 
 	return (
-		<div className={classNames('link-item', { 'link-item-active': pathname.endsWith(href) })}>
+		<div
+			className={classNames(
+				'link-item',
+				{ 'link-item-active': pathname.endsWith(href)
+			})}
+		>
       <Link href={href}>{label}</Link>
 		</div>	
 	);
